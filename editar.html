@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=7ca08e63-aa71-4523-9bc6-a38fc39017ac
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=7ca08e63-aa71-4523-9bc6-a38fc39017ac
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=7ca08e63-aa71-4523-9bc6-a38fc39017ac
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. --><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Editor visual · La Travesía del Wall Street</title>
+<style>
+:root{--navy:#102b43;--ink:#263449;--muted:#65758a;--gold:#b48a36;--paper:#fffdf7;--outline:#e1dfd9;--bg:#eef2f5;--mint:#eefaf3}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,Segoe UI,Arial,sans-serif}
+header{background:var(--navy);color:white;padding:19px max(16px,calc((100vw - 1380px)/2));display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+header h1{font:700 clamp(20px,3vw,28px) Georgia,serif;margin:0;color:#ffe5aa}header p{margin:3px 0 0;color:#d3e0e9;font-size:13px}
+a{color:#174d78}header a{color:#e9f5fa}
+button,.button-link{cursor:pointer;border:1px solid #becbd3;border-radius:8px;background:#fff;color:var(--navy);font:inherit;font-weight:600;padding:9px 12px;min-height:39px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:6px}
+button:hover,.button-link:hover{background:#f0f6fa}button:disabled{opacity:.45;cursor:not-allowed}
+button.primary{background:#176c66;color:white;border-color:#176c66}button.primary:hover{background:#105852}button.warn{color:#a23d32}
+.layout{display:grid;grid-template-columns:260px minmax(450px,1fr) 310px;gap:16px;max-width:1460px;margin:18px auto;padding:0 16px;align-items:start}
+nav,.panel,.preview{background:white;border:1px solid var(--outline);border-radius:13px;box-shadow:0 5px 18px #192e440b}nav,.preview{position:sticky;top:14px;max-height:calc(100vh - 28px);overflow:auto}
+nav{padding:15px}nav h2{margin:0 0 10px;font-size:16px}.scene-btn{width:100%;display:block;text-align:left;font-weight:500;font-size:13px;margin:4px 0;padding:10px;border-color:transparent;background:transparent}.scene-btn.selected{background:#e8f2ef;color:#075a53;border-color:#acd1c8;font-weight:700}.scene-btn .num{color:var(--muted);font-size:12px;margin-right:5px}
+.panel{padding:22px}.section{border:1px solid var(--outline);border-radius:11px;background:var(--paper);padding:16px;margin:16px 0}.section h3{font-size:17px;margin:0 0 10px;color:var(--navy)}.section p.help{color:var(--muted);font-size:13px;margin:0 0 12px}.section h4{font-size:14px;margin:12px 0 6px}
+label.field{display:block;margin:11px 0 4px;font-weight:600;font-size:13px}input[type=text],textarea,select{font:inherit;padding:10px 11px;width:100%;border-radius:7px;border:1px solid #bac6d0;background:#fff;color:var(--ink)}textarea{min-height:78px;resize:vertical}textarea.large{min-height:125px}input:focus,textarea:focus,select:focus{outline:2px solid #78a9a0;outline-offset:1px}
+.small-actions{display:flex;gap:7px;flex-wrap:wrap}.subitem{padding:12px;margin:10px 0;border:1px solid #e4e8e8;border-radius:9px;background:white}.subhead{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;font-weight:700}.mini{font-size:12px}.mini button,button.mini{min-height:32px;padding:6px 9px;font-size:12px}.thumb{max-width:100%;width:155px;max-height:130px;object-fit:contain;border-radius:7px;background:#e4e9ed}
+.media-row{display:grid;grid-template-columns:155px 1fr;gap:12px;align-items:start}.preview{padding:15px}.preview h2{font:700 19px Georgia,serif;margin:0 0 12px}.preview-card{background:var(--paper);border:1px solid #e2dfd5;border-radius:9px;padding:15px}.preview-card .eyebrow{color:var(--gold);font-size:12px;text-transform:uppercase;letter-spacing:.1em}.preview-card h3{font:700 23px/1.2 Georgia,serif;color:var(--navy);margin:6px 0 12px}.preview-card .excerpt{white-space:pre-line;font:15px/1.5 Georgia,serif}.preview-card .scene-photo{width:100%;max-height:180px;object-fit:contain;margin-top:9px;border-radius:6px}
+.notice{background:#f0f7fa;border:1px solid #b8d3df;padding:11px;border-radius:8px;font-size:13px;color:#24516a;margin:12px 0}.status{font-size:13px;color:#1f6a52;min-height:22px}.top-actions{display:flex;gap:10px;flex-wrap:wrap}.editor-title{display:flex;align-items:start;justify-content:space-between;gap:12px;flex-wrap:wrap} .editor-title h2{margin:0;font:700 23px Georgia,serif;color:var(--navy)}
+hr{border:0;border-top:1px solid #e2e8ed;margin:14px 0}summary{cursor:pointer;font-weight:700}details{margin-top:12px}
+.guide{max-width:1430px;margin:18px auto 0;padding:12px 16px;border:1px solid #9fcbbb;background:#eaf8f0;border-radius:9px;color:#18523e;line-height:1.6}
+#startup-error{max-width:1430px;margin:18px auto;padding:18px;background:#fff1f0;border:1px solid #cc6969;border-radius:9px;color:#922}
+#startup-error[hidden]{display:none}
+#notice-progress{padding:12px;background:var(--mint);border:1px solid #a1cbbb;border-radius:8px;display:none;margin:12px 0}
+footer{max-width:1460px;margin:25px auto 40px;padding:0 16px;font-size:12px;color:var(--muted)}
+@media(max-width:1080px){.layout{grid-template-columns:220px 1fr}.preview{grid-column:2;position:static;max-height:none}.panel{padding:16px}}
+@media(max-width:700px){.layout{display:block;margin:10px auto}.layout>nav,.layout>.panel,.layout>.preview{margin:10px 0;position:static;max-height:none}.media-row{grid-template-columns:1fr}.thumb{width:100%}header{padding:14px}.panel{padding:12px}}
+</style>
+<script src="contenido.js"></script>
+<script src="jszip.min.js"></script>
+</head>
+<body>
+<header><div><h1>⛵ Editor de La Travesía</h1><p>Modifica textos, retos, fotografías y vídeos sin tocar el HTML.</p></div><div class="top-actions"><a class='button-link' href='/' target='_blank'>▶ Abrir juego publicado</a><button id="save-btn">💾 Guardar borrador</button><button class="primary" id="export-btn">⬇ Descargar ZIP para Netlify</button></div></header>
+<div class="guide"><strong>Editor visual activo:</strong> 1. Elige una escena y cambia el contenido. 2. Pulsa <strong>Guardar borrador</strong>. 3. Para que tus amigos vean los cambios, pulsa <strong>Descargar ZIP para Netlify</strong> y vuelve a publicar la carpeta en tu mismo proyecto.<br><small>Guardar el borrador aquí no modifica por sí solo el juego publicado.</small></div>
+<div id="startup-error" role="alert" hidden></div>
+<div class="layout">
+<nav><h2>📖 Escenas del juego</h2><div id="scene-list"></div><hr><button id="add-scene">＋ Añadir escena</button><div class="notice">Tus cambios se guardan como borrador <strong>solo en este navegador</strong>. Para publicarlos, descarga el proyecto y súbelo a Netlify.</div><button id="reset-draft" class="mini warn">↶ Volver a la versión publicada</button><div id="draft-state" class="mini" style="color:var(--muted);margin-top:9px" aria-live="polite"></div></nav>
+<main class="panel"><div class="editor-title"><div><h2 id="editor-scene-title">Escena</h2><div id="scene-summary" class="mini" style="color:var(--muted)"></div></div><div class="small-actions mini"><button id="move-up">↑ Subir</button><button id="move-down">↓ Bajar</button><button id="duplicate-scene">Duplicar</button><button id="delete-scene" class="warn">Eliminar</button></div></div><div id="edit-form"></div><div id="notice-progress" role="status"></div><div id="save-status" class="status" aria-live="polite"></div></main>
+<aside class="preview"><h2>👀 Vista previa de la escena</h2><div class="preview-card" id="scene-preview"></div><hr><h2>🖼️ Portada y tripulación</h2><p class="mini" style="color:var(--muted)">Puedes reemplazar la portada o los avatares sin editar HTML.</p><div id="global-media"></div><hr><h2>🚀 Publicar en Netlify</h2><div class="mini" style="line-height:1.8">1. Guarda tu borrador y pulsa <strong>Descargar ZIP para Netlify</strong>.<br>2. <strong>Descomprime el ZIP</strong> en tu ordenador.<br>3. En Netlify, abre <strong>tu proyecto → Deploys</strong>.<br>4. Arrastra la <strong>carpeta descomprimida</strong> que contiene index.html y editar.html. Tu enlace público se conserva.</div><p class="notice">Esta página no modifica el sitio publicado hasta que vuelvas a subir los archivos a Netlify. Quien conozca la dirección del editor puede abrirlo, pero no publicar sin acceso a tu cuenta de Netlify.</p></aside>
+</div>
+<footer>LA TRAVESÍA · 30 ANIVERSARIO · Conserva una copia del ZIP anterior como respaldo. El contenido original de la bitácora solo cambia si tú lo editas.</footer>
+<input type="file" id="file-picker" hidden>
+<script>
+(()=>{
+'use strict';
+if (!window.WALL_STREET_DATA || !Array.isArray(window.WALL_STREET_DATA.slides)) {
+  const e=document.getElementById('startup-error');e.hidden=false;
+  e.textContent='No se ha podido cargar contenido.js. El editor necesita publicarse junto con index.html, contenido.js y las carpetas de imágenes y vídeos. Descomprime el ZIP y sube la carpeta completa a Netlify (en Deploys de tu sitio).';
+  return;
+}
+if (typeof window.JSZip !== 'function') {
+  const e=document.getElementById('startup-error');e.hidden=false;
+  e.textContent='No se ha podido cargar jszip.min.js. Sube la carpeta completa a Netlify; no publiques únicamente editar.html.';
+  return;
+}
+const DRAFT_KEY='wall-street-borrador-v1';
+const DB_NAME='wall-street-archivos-v1';
+const published=structuredClone(window.WALL_STREET_DATA);
+let data=structuredClone(published);
+let selected=0, pendingFiles=new Map(), previewUrls=new Map(), fileIntent=null, manifest=[];
+const el=id=>document.getElementById(id);
+const esc=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const field=(label,scope,key,value,large=false)=>`<label class="field">${esc(label)}</label><textarea data-scope="${scope}" data-key="${key}" class="${large?'large':''}">${esc(value)}</textarea>`;
+const txt=(label,key,v)=>`<label class="field">${esc(label)}</label><input type="text" data-scope="slide" data-key="${key}" value="${esc(v)}">`;
+const button=(label,action,attr='')=>`<button type="button" class="mini" data-action="${action}" ${attr}>${label}</button>`;
+const cur=()=>data.slides[selected];
+const safeFile=name=>name.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-zA-Z0-9_.-]/g,'_').slice(-75);
+function uniqueId(){return Date.now()+'_'+Math.floor(Math.random()*1000000)}
+function getDb(){return new Promise((resolve,reject)=>{if(!window.indexedDB){reject(Error('Almacenamiento de archivos no disponible'));return;}const r=indexedDB.open(DB_NAME,1);r.onupgradeneeded=()=>r.result.createObjectStore('media',{keyPath:'path'});r.onsuccess=()=>resolve(r.result);r.onerror=()=>reject(r.error)})}
+async function saveFile(path,file){try{const db=await getDb();await new Promise((ok,bad)=>{const tx=db.transaction('media','readwrite');tx.objectStore('media').put({path,blob:file});tx.oncomplete=ok;tx.onerror=()=>bad(tx.error)});db.close()}catch(e){setStatus('⚠ El archivo nuevo solo permanecerá disponible hasta que cierres esta pestaña. Exporta el ZIP ahora.')}}
+async function loadFiles(){try{const db=await getDb();const all=await new Promise((ok,bad)=>{const r=db.transaction('media','readonly').objectStore('media').getAll();r.onsuccess=()=>ok(r.result);r.onerror=()=>bad(r.error)});all.forEach(x=>pendingFiles.set(x.path,x.blob));db.close()}catch(e){console.warn(e)}}
+function url(path){if(!path)return'';if(pendingFiles.has(path)){if(!previewUrls.has(path))previewUrls.set(path,URL.createObjectURL(pendingFiles.get(path)));return previewUrls.get(path)}return path}
+function setStatus(msg){el('save-status').textContent=msg}
+function saveDraft(){try{localStorage.setItem(DRAFT_KEY,JSON.stringify(data));setStatus('✓ Borrador guardado en este navegador · Pendiente de publicar en Netlify');showDraftState(true);return true}catch(e){setStatus('⚠ Este navegador no permite guardar el borrador. Descarga el ZIP antes de cerrar.');showDraftState(false);return false}}
+function showDraftState(active){el('draft-state').textContent=active?'🟢 Tienes un borrador local. Aún no está publicado.':'Estás viendo el contenido del juego publicado.'}
+function setup(){let hasDraft=false;
+try{const saved=JSON.parse(localStorage.getItem(DRAFT_KEY)||'null');if(saved&&Array.isArray(saved.slides)&&saved.images&&saved.videos){data=saved;hasDraft=true;}}catch(e){console.warn('Error al recuperar borrador',e)}
+render();showDraftState(hasDraft);
+loadFiles().then(()=>{renderPreview();renderGlobal();}).catch(e=>console.warn('Archivos guardados',e));
+fetch('manifest.json').then(r=>{if(!r.ok)throw Error('Falta manifest.json');return r.json()}).then(xs=>{manifest=xs}).catch(e=>{console.warn(e);setStatus('⚠ Puede faltar manifest.json. Si no puedes exportar, vuelve a publicar el ZIP completo.');});
+}
+function renderNav(){el('scene-list').innerHTML=data.slides.map((s,i)=>`<button type="button" class="scene-btn ${i===selected?'selected':''}" data-index="${i}"><span class="num">${String(i+1).padStart(2,'0')}</span> ${esc(s.title||'Sin título')}</button>`).join('');el('move-up').disabled=selected===0;el('move-down').disabled=selected===data.slides.length-1;el('delete-scene').disabled=data.slides.length<=1}
+function render(){if(selected>=data.slides.length)selected=data.slides.length-1;renderNav();const s=cur();el('editor-scene-title').textContent=s.title||'Sin título';el('scene-summary').textContent=`Escena ${selected+1} de ${data.slides.length} · ${s.date||'Sin fecha'}`;
+let html=`<section class="section"><h3>✏️ Datos de la escena</h3>${txt('Título', 'title',s.title)}${txt('Fecha','date',s.date)}${txt('Lugar','location',s.location)}${txt('Etapa / capítulo','stage',s.stage)}${txt('Coordenadas / información','coords',s.coords)}${field('Narración (comentario del juego)','slide','narrative',s.narrative,true)}</section>`;
+html+=`<section class="section"><h3>📖 Cuaderno de bitácora</h3><p class="help">Cada bloque conserva por separado el texto original. Puedes corregir una escena sin tocar las demás.</p>`;
+(s.logbook||[]).forEach((t,i)=>{html+=`<div class="subitem"><div class="subhead">Texto ${i+1} ${button('Eliminar','remove-log',`data-i="${i}"`)}</div><textarea class="large" data-scope="log" data-i="${i}">${esc(t)}</textarea></div>`});html+=`${button('＋ Añadir párrafo','add-log')}</section>`;
+html+=`<section class="section"><h3>🖼️ Fotografías de la escena</h3><p class="help">Puedes cambiar el pie de foto, eliminarla de esta escena o sustituirla por un nuevo archivo de tu ordenador.</p>`;
+(s.images||[]).forEach((o,i)=>{const src=data.images[o.key]||'';html+=`<div class="subitem media-row"><img class="thumb" src="${esc(url(src))}" alt="Imagen ${i+1}"><div><label class="field">Pie de foto</label><input data-scope="image-caption" data-i="${i}" type="text" value="${esc(o.caption)}"><div class="small-actions" style="margin-top:9px">${button('Sustituir','replace-image',`data-i="${i}"`)}${button('Quitar','remove-image',`data-i="${i}"`)}</div></div></div>`});html+=`${button('＋ Añadir fotografía','add-image')}</section>`;
+html+=`<section class="section"><h3>🎬 Vídeos de la escena</h3><p class="help">Al pulsar ▶ se reproduce el MP4. Los vídeos nuevos se guardarán dentro de la carpeta /videos al descargar el ZIP.</p>`;
+(s.wallExtraVideos||[]).forEach((id,i)=>{const v=data.videos[id];if(!v)return;html+=`<div class="subitem"><video controls playsinline preload="metadata" style="width:100%;max-height:220px;background:#101d27;border-radius:6px" src="${esc(url(v.src))}" ${v.poster?`poster="${esc(url(v.poster))}"`:''}></video><label class="field">Descripción del vídeo</label><input type="text" value="${esc(v.caption)}" data-scope="video-caption" data-id="${esc(id)}"><div class="small-actions" style="margin-top:9px">${button('Sustituir','replace-video',`data-i="${i}"`)}${button('Quitar de la escena','remove-video',`data-i="${i}"`)}</div></div>`});html+=`${button('＋ Añadir vídeo MP4','add-video')}</section>`;
+html+=`<section class="section"><h3>🧭 Pregunta tipo test</h3>`;
+if(!s.quiz){html+=`<p class="help">Esta escena no tiene pregunta.</p>${button('＋ Crear pregunta','add-quiz')}`} else {const q=s.quiz;html+=`${txtSection('Categoría','quiz','category',q.category)}${field('Enunciado','quiz','question',q.question,true)}<h4>Respuestas</h4>`;q.options.forEach((opt,i)=>{html+=`<div class="subitem"><div class="subhead">Respuesta ${i+1} ${button('Eliminar','remove-quiz-option',`data-i="${i}"`)}</div><label class="field">Texto de la opción</label><textarea data-scope="quiz-option" data-i="${i}" data-key="text">${esc(opt.text)}</textarea><label class="field">Mensaje tras responder</label><textarea data-scope="quiz-option" data-i="${i}" data-key="feedback">${esc(opt.feedback)}</textarea><label class="field">¿Es la respuesta correcta?</label><select data-scope="quiz-correct" data-i="${i}"><option value="no" ${!opt.correct?'selected':''}>No</option><option value="si" ${opt.correct?'selected':''}>Sí</option></select></div>`});html+=`${button('＋ Añadir respuesta','add-quiz-option')} ${button('Quitar toda la pregunta','remove-quiz')}`;}html+=`</section>`;
+html+=`<section class="section"><h3>🧩 Dilema y decisiones</h3>`;
+if(!s.dilemma){html+=`<p class="help">Esta escena no contiene un dilema.</p>${button('＋ Crear dilema','add-dilemma')}`}else{const d=s.dilemma;html+=`${txtSection('Etiqueta','dilemma','title',d.title)}${field('Situación / dilema','dilemma','prompt',d.prompt,true)}`;d.options.forEach((opt,i)=>{html+=`<div class="subitem"><div class="subhead">Decisión ${i+1} ${button('Eliminar','remove-dilemma-option',`data-i="${i}"`)}</div>${txtOption('Texto de la decisión','label',i,opt.label)}<label class="field">Resultado</label><select data-scope="dilemma-option" data-key="outcome_type" data-i="${i}"><option value="continue" ${opt.outcome_type==='continue'?'selected':''}>Permite avanzar</option><option value="recoverable" ${opt.outcome_type==='recoverable'?'selected':''}>Reintentar</option><option value="gameover" ${opt.outcome_type==='gameover'?'selected':''}>Fin de partida</option></select>${txtOption('Título del resultado','outcome_title',i,opt.outcome_title)}${fieldOpt('Descripción del resultado','outcome_text',i,opt.outcome_text)}</div>`});html+=`${button('＋ Añadir decisión','add-dilemma-option')} ${button('Quitar el dilema','remove-dilemma')}`;}html+=`</section>`;
+if(s.ship_specs){html+=`<section class="section"><h3>🛠️ Anexo técnico</h3>${field('Datos técnicos (un dato por línea)','slide','_specsEdit',(s.ship_specs||[]).join('\n'),true)}</section>`;}
+if(s.type==='epilogue-preview')html+=`<div class="notice">Esta última escena tiene un diseño especial de «Continuará». Su aspecto final se mantiene aunque cambies los campos de texto de arriba.</div>`;
+el('edit-form').innerHTML=html;renderPreview();renderGlobal();}
+function txtSection(label,scope,key,v){return `<label class="field">${esc(label)}</label><input type="text" data-scope="${scope}" data-key="${key}" value="${esc(v)}">`}
+function txtOption(label,key,i,v){return `<label class="field">${esc(label)}</label><input type="text" data-scope="dilemma-option" data-i="${i}" data-key="${key}" value="${esc(v)}">`}
+function fieldOpt(label,key,i,v){return `<label class="field">${esc(label)}</label><textarea data-scope="dilemma-option" data-i="${i}" data-key="${key}">${esc(v)}</textarea>`}
+function renderPreview(){const s=cur();const box=el('scene-preview');box.innerHTML='';let e=document.createElement('div');e.className='eyebrow';e.textContent=s.date||'Escena';box.append(e);let h=document.createElement('h3');h.textContent=s.title;box.append(h);let p=document.createElement('p');p.className='excerpt';p.textContent=(s.logbook||[]).join('\n\n').slice(0,550);box.append(p);if(s.narrative){let p2=document.createElement('p');p2.textContent=s.narrative;box.append(p2)}(s.images||[]).slice(0,2).forEach(m=>{let im=document.createElement('img');im.className='scene-photo';im.src=url(data.images[m.key]);im.alt=m.caption;box.append(im)});if(s.quiz){const p=document.createElement('p');p.style.fontWeight='700';p.textContent='🧭 '+s.quiz.question;box.append(p)}if(s.dilemma){const p=document.createElement('p');p.style.fontWeight='700';p.textContent='🧩 '+s.dilemma.prompt;box.append(p)}}
+function renderGlobal(){let html=`<div class="subitem"><img class="thumb" src="${esc(url(data.cover))}" style="width:100%" alt="Portada"><div style="margin-top:8px">${button('Cambiar portada','cover')}</div></div>`;for(const [name,path] of Object.entries(data.avatars||{})){html+=`<div class="subitem"><div class="media-row" style="grid-template-columns:65px 1fr"><img class="thumb" src="${esc(url(path))}" style="width:65px;height:65px;border-radius:50%" alt="Avatar"><div><strong>${esc(name)}</strong><div>${button('Sustituir','avatar',`data-name="${esc(name)}"`)}</div></div></div></div>`;}el('global-media').innerHTML=html}
+function onField(e){const t=e.target;if(!t.dataset.scope)return;const s=cur(),i=Number(t.dataset.i),scope=t.dataset.scope,key=t.dataset.key;const value=t.value;
+if(scope==='slide'){if(key==='_specsEdit')s.ship_specs=value.split('\n').map(x=>x.trim()).filter(Boolean);else s[key]=value}
+else if(scope==='log')s.logbook[i]=value;
+else if(scope==='image-caption')s.images[i].caption=value;
+else if(scope==='video-caption')data.videos[t.dataset.id].caption=value;
+else if(scope==='quiz')s.quiz[key]=value;
+else if(scope==='quiz-option')s.quiz.options[i][key]=value;
+else if(scope==='quiz-correct'){s.quiz.options.forEach((o,j)=>o.correct=j===i);el('edit-form').querySelectorAll('[data-scope="quiz-correct"]').forEach((x,j)=>x.value=(j===i?'si':'no'))}
+else if(scope==='dilemma')s.dilemma[key]=value;
+else if(scope==='dilemma-option')s.dilemma.options[i][key]=value;
+saveDraft();renderPreview();if(key==='title'||key==='date'){renderNav();el('editor-scene-title').textContent=s.title;el('scene-summary').textContent=`Escena ${selected+1} de ${data.slides.length} · ${s.date}`}}
+function action(a,b){const s=cur(),i=Number(b.dataset.i);switch(a){
+case 'add-log':(s.logbook??=[]).push('');break;case 'remove-log':s.logbook.splice(i,1);break;
+case 'add-image':return pick('image',a);
+case 'replace-image':return pick('image',a,i);
+case 'remove-image':s.images.splice(i,1);break;
+case 'add-video':return pick('video',a);
+case 'replace-video':return pick('video',a,i);
+case 'remove-video':s.wallExtraVideos.splice(i,1);break;
+case 'cover':return pick('image','cover');case 'avatar':return pick('image','avatar',0,b.dataset.name);
+case 'add-quiz':s.quiz={category:'Navegación',question:'¿Cuál es la respuesta correcta?',options:[{text:'Opción A',correct:true,feedback:'¡Correcto!'},{text:'Opción B',correct:false,feedback:'Prueba otra vez.'}]};delete s.dilemma;break;
+case 'remove-quiz':delete s.quiz;break;
+case 'add-quiz-option':s.quiz.options.push({text:'Nueva opción',correct:false,feedback:'Prueba otra vez.'});break;
+case 'remove-quiz-option':if(s.quiz.options.length<=2)return alert('Mantén al menos dos respuestas.');const was=s.quiz.options[i].correct;s.quiz.options.splice(i,1);if(was)s.quiz.options[0].correct=true;break;
+case 'add-dilemma':s.dilemma={title:'DILEMA',prompt:'¿Qué hace la tripulación?',options:[{label:'Opción A',outcome_type:'continue',outcome_title:'¡Seguimos!',outcome_text:'El viaje continúa.'},{label:'Opción B',outcome_type:'recoverable',outcome_title:'Inténtalo de nuevo',outcome_text:'Vuelve a elegir.'}]};delete s.quiz;break;
+case 'remove-dilemma':delete s.dilemma;break;
+case 'add-dilemma-option':s.dilemma.options.push({label:'Otra decisión',outcome_type:'recoverable',outcome_title:'Resultado',outcome_text:'Explicación'});break;
+case 'remove-dilemma-option':if(s.dilemma.options.length<=2)return alert('Mantén al menos dos decisiones.');s.dilemma.options.splice(i,1);break;
+}saveDraft();render()}
+function pick(type,action,i=0,name=''){fileIntent={action,i,name};const input=el('file-picker');input.accept=type==='image'?'image/jpeg,image/png,image/webp,image/gif':'video/mp4,video/webm';input.value='';input.click()}
+async function onNewFile(e){const f=e.target.files[0];if(!f||!fileIntent)return;const {action,i,name}=fileIntent;const isVideo=['add-video','replace-video'].includes(action);if(isVideo&&!f.type.startsWith('video/'))return alert('Selecciona un archivo de vídeo MP4 o WebM.');if(!isVideo&&!f.type.startsWith('image/'))return alert('Selecciona una imagen JPG, PNG o WebP.');const path=(isVideo?'videos/':'imagenes/')+'personal_'+uniqueId()+'_'+safeFile(f.name);pendingFiles.set(path,f);await saveFile(path,f);const s=cur();
+if(action==='cover')data.cover=path;
+else if(action==='avatar')data.avatars[name]=path;
+else if(isVideo){const id='personal_'+uniqueId();data.videos[id]={src:path,caption:f.name,poster:''};s.wallExtraVideos??=[];if(action==='replace-video')s.wallExtraVideos[i]=id;else s.wallExtraVideos.push(id)}
+else{const key='personal_'+uniqueId();data.images[key]=path;s.images??=[];if(action==='replace-image')s.images[i]={key,caption:s.images[i].caption||f.name};else s.images.push({key,caption:f.name})}
+saveDraft();render();}
+function addScene(){const id=Math.max(-1,...data.slides.map(s=>Number(s.id)||0))+1;selected++;data.slides.splice(selected,0,{id,type:'story',date:'',location:'',coords:'',stage:'Nueva etapa',title:'Nueva escena',logbook:[''],narrative:'',images:[],svg:null});saveDraft();render()}
+function duplicate(){const copy=structuredClone(cur());copy.id=Math.max(-1,...data.slides.map(s=>Number(s.id)||0))+1;copy.title+=' (copia)';selected++;data.slides.splice(selected,0,copy);saveDraft();render()}
+function move(dir){const next=selected+dir;if(next<0||next>=data.slides.length)return;[data.slides[selected],data.slides[next]]=[data.slides[next],data.slides[selected]];selected=next;saveDraft();render()}
+function removeScene(){if(data.slides.length<=1||!confirm('¿Eliminar esta escena del juego?'))return;data.slides.splice(selected,1);selected=Math.max(0,selected-1);saveDraft();render()}
+async function exportZip(){const btn=el('export-btn');btn.disabled=true;el('notice-progress').style.display='block';const progress=el('notice-progress');try{
+  // The manifest is essential to include *all* the original media in the downloaded ZIP.
+  if(!manifest.length){const r=await fetch('manifest.json');if(!r.ok)throw Error('Falta manifest.json. Publica la carpeta completa desde Netlify.');manifest=await r.json();}
+  if(manifest.length<10)throw Error('No se ha cargado la lista de archivos. Comprueba la publicación completa.');
+  saveDraft();const zip=new JSZip();const files=new Set([...manifest,'index.html','editar.html','jszip.min.js','LEEME_NETLIFY.txt','manifest.json']);for(const path of [...Object.values(data.images),...Object.values(data.avatars),data.cover,...Object.values(data.videos).flatMap(v=>[v.src,v.poster])])if(path)files.add(path);files.delete('contenido.js');files.delete('manifest.json');let done=0;const total=files.size+1;
+for(const path of files){if(!path||path.startsWith('data:'))continue;progress.textContent=`Preparando ZIP… ${++done} de ${total} archivos (${path})`;let bytes;if(pendingFiles.has(path))bytes=pendingFiles.get(path);else{const r=await fetch(path);if(!r.ok)throw Error('No se ha podido encontrar '+path+' en la web. Abre el editor desde Netlify y comprueba que el archivo existe.');bytes=await r.blob();}zip.file(path,bytes)}
+zip.file('contenido.js','/* Contenido editable · La Travesía */\nwindow.WALL_STREET_DATA = '+JSON.stringify(data,null,2)+';\n');const newManifest=[...new Set([...files,'contenido.js','manifest.json'])].filter(Boolean).sort();zip.file('manifest.json',JSON.stringify(newManifest,null,2));progress.textContent='Comprimiendo y terminando descarga…';const blob=await zip.generateAsync({type:'blob',compression:'STORE',streamFiles:true},meta=>{progress.textContent='Preparando descarga… '+Math.round(meta.percent)+'%'});const ref=URL.createObjectURL(blob);const link=document.createElement('a');link.href=ref;link.download='La_Travesia_Wall_Street_EDITADO_NETLIFY.zip';document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(ref),60000);progress.textContent='✓ ZIP descargado. Descomprímelo y arrastra la carpeta a Deploys de tu proyecto Netlify. El enlace se mantiene.';
+}catch(e){console.error(e);progress.textContent='❌ '+e.message;alert('No se pudo generar el proyecto: '+e.message)}finally{btn.disabled=false}}
+el('scene-list').addEventListener('click',e=>{const b=e.target.closest('[data-index]');if(!b)return;selected=Number(b.dataset.index);render()});el('edit-form').addEventListener('input',onField);
+for(const target of ['edit-form','global-media'])el(target).addEventListener('click',e=>{const b=e.target.closest('[data-action]');if(b)action(b.dataset.action,b)});
+el('save-btn').addEventListener('click',()=>{saveDraft();});
+el('add-scene').addEventListener('click',addScene);el('duplicate-scene').addEventListener('click',duplicate);el('move-up').addEventListener('click',()=>move(-1));el('move-down').addEventListener('click',()=>move(1));el('delete-scene').addEventListener('click',removeScene);el('export-btn').addEventListener('click',exportZip);el('file-picker').addEventListener('change',onNewFile);
+el('reset-draft').addEventListener('click',()=>{if(!confirm('¿Descartar los cambios locales y volver al contenido publicado en Netlify?'))return;data=structuredClone(published);selected=0;localStorage.removeItem(DRAFT_KEY);render();showDraftState(false);setStatus('Borrador descartado: estás viendo la versión publicada')});
+setup();
+})();
+</script>
+</body></html>

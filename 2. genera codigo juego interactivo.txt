@@ -1,0 +1,46 @@
+Genera el código de un **juego interactivo basado en la bitácora original de la travesía del Wall Street**.
+
+- Crea **slides siguiendo el orden cronológico del viaje**.
+- En cada slide debe aparecer el **texto original de la bitácora**, pudiendo pulirlo muy ligeramente para facilitar la lectura.
+- El resultado debe ser fluido, visual y jugable, pero **siempre fiel al relato real**.
+
+- Tono **marinero, ágil y cercano**.
+- Añade algo de humor, pero sin convertirlo en una parodia.
+- Diseño bonito, limpio y poco recargado.
+
+MATERIAL ORIGINAL Utiliza las imágenes adjuntas e intercálalas donde correspondan:
+- Fotografías originales.
+- Cartas de navegación y meteorología.
+- Postales originales.
+
+Añade también algunos gráficos de apoyo cuando ayuden a entender el relato: - Mapas. - Puertos. - Constelaciones. - Rutas - Elementos de navegación.
+
+GENERA E INTRODUCE:
+**Preguntas tipo test** de nivel medio-alto relacionadas con lo que acaba de ocurrir: navegación, astronomía, geografía, RIPA, señalización, meteorología, maniobras, terminología o curiosidades marineras.
+
+GENERA E INTRODUCE:
+**Dilemas con consecuencias**, por ejemplo:
+- Respuesta correcta → continuar la travesía.
+- Error recuperable → volver a intentarlo.
+- Mala decisión → final alternativo / fin de partida / volver al inicio.
+
+
+PRÓLOGO
+"Este es el relato de un viaje en velero, desde la isla de Ibiza, en el Mediterráneo, hasta Antigua, en el Mar Caribe. 
+Un viaje de esta clase, es una ilusión, casi un sueño, que uno raramente llega a creer que pueda hacerse realidad. 
+Gracias a una serie de circunstancias afortunadas, y a las gestiones de buenos amigos, lo he podido concretar."
+1.996 --- Miguel Bonnin Costa:
+
+Este juego recrea la travesía cuando se cumplen 30 años.
+Combina los acontecimientos reales del viaje con ficciones añadidas, finales alternativos y retos!
+Para entretener y recordar. 
+Gracias al cuaderno de bitácora de Miguel Bonnin.
+	
+Ayuda a la tripulación a tomar las mejores decisiones! A bordo: *no modifiques las descripciones:
+
+ PIRU		Gabriel Ageitos. El Capi. Responsable del rumbo y de las decisiones difíciles.
+ VESNA		Conoce cada rincón del barco como nadie. Guardiana del velero y firme en las duras guardias.
+ MIGUEL		Tras años de regatas y navegaciones, está a punto de cumplir un sueño. Será quien deje constancia de esta aventura en su cuaderno de bitácora.
+ PATO		Patricio Da Milano, el más joven de los cuatro. 	De estirpe marinera, con el mar en las venas.
+
+

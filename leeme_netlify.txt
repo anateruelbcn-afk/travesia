@@ -1,0 +1,29 @@
+LA TRAVESÍA DEL WALL STREET · VERSIÓN CON EDITOR REPARADO
+
+IMPORTANTE: ESTE EDITOR NO PUBLICA CAMBIOS AUTOMÁTICAMENTE EN NETLIFY.
+
+1. DESCOMPRIME el ZIP que has descargado.
+2. Abre Netlify y entra en TU MISMO SITIO, no crees otro.
+3. Abre la pestaña «Deploys» de tu sitio; arrastra allí la CARPETA DESCOMPRIMIDA.
+   Dentro de ella deben estar index.html, editar.html, contenido.js, jszip.min.js,
+   manifest.json, la carpeta imagenes y la carpeta videos.
+4. El juego se abre en tu dirección de Netlify habitual.
+5. El editor se abre con el enlace «Editar juego» del juego o añadiendo /editar.html
+   a la dirección pública del juego, por ejemplo: https://mi-sitio.netlify.app/editar.html
+
+EN EL EDITOR:
+- Elige una escena y cambia los textos, las preguntas o los archivos multimedia.
+- Pulsa «Guardar borrador»: se guardará solo en TU navegador.
+- Pulsa «Descargar ZIP para Netlify» cuando quieras publicar los cambios.
+- Descomprime el nuevo ZIP y arrastra la carpeta a Deploys de TU MISMO sitio.
+- Los visitantes verán las modificaciones después del nuevo despliegue.
+
+SI EL EDITOR NO SE ABRE:
+- Comprueba que estás usando /editar.html y no /editor ni la ruta del ZIP.
+- En Netlify, Deploys: el último despliegue debe contener editar.html,
+  contenido.js, jszip.min.js y manifest.json en la raíz.
+- Vuelve a subir la carpeta completa, no solo el HTML ni la carpeta contenedora.
+
+SEGURIDAD: /editar.html es públicamente accesible. Quien conozca esa dirección
+puede editar una copia local, pero NO puede publicar en tu Netlify sin autorización.
+Conserva una copia del ZIP anterior como respaldo.
