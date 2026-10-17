@@ -741,12 +741,35 @@
 .wall-extra-video-frame figcaption { color:#4a5568;text-align:center;font:italic .85rem/1.4 Georgia,serif;margin-top:9px; }
 @media(max-width:700px) {.wall-extra-video-frame{padding:6px 6px 10px}.wall-extra-video-frame figcaption{font-size:.78rem}}
 
+
+/* Ajustes de presentación — fotografías enteras, una por fila, y portada sin imagen */
+.media-grid { grid-template-columns: minmax(0, 1fr); }
+.photo-frame img { display:block; width:100%; height:auto; max-height:none; object-fit:initial; background:transparent; }
+.outcome-media img { height:auto; max-height:none; object-fit:initial; }
+.wall-cover-wrap { display:flex; align-items:center; justify-content:center; background:linear-gradient(135deg,#081b2d,#16415f); }
+.wall-cover-placeholder {
+  width:min(900px, 92vw); height:min(68vh, 650px); min-height:310px;
+  border:1px dashed rgba(181,210,230,.55); border-radius:10px;
+  background:linear-gradient(145deg,rgba(23,61,91,.75),rgba(9,28,47,.88));
+  color:#f3f7fa; padding:clamp(18px,4vw,40px); text-align:center;
+  display:flex; flex-direction:column; justify-content:center; align-items:center; gap:16px;
+}
+.wall-cover-kicker { font-size:clamp(.85rem,2.5vw,1.2rem); letter-spacing:.13em; color:#c6d7e8; }
+.wall-cover-placeholder h1 { font-family:Georgia,serif; font-size:clamp(2rem,6vw,4rem); line-height:1.15; color:#fff; }
+.wall-cover-placeholder p { font-size:clamp(.9rem,2.3vw,1.2rem); color:#d4e6f4; }
+.wall-cover-placeholder small { font-size:clamp(.7rem,1.8vw,.92rem); color:#aabfcf; }
+
 </style>
 </head>
 <body>
 <div id="wall-start-screen" aria-label="Portada del juego La Travesía del Wall Street">
 <div class="wall-cover-wrap">
-<img id="wall-cover-image" src="imagenes/portada_principal.png" alt="La Travesía del Wall Street, 1996-1997. Juego interactivo del 30.º aniversario. La tripulación al timón.">
+<div class="wall-cover-placeholder" aria-label="Portada provisional del juego">
+  <div class="wall-cover-kicker">LA TRAVESÍA DEL WALL STREET</div>
+  <h1>PORTADA PROVISIONAL</h1>
+  <p>1996–1997 · EDICIÓN 30.º ANIVERSARIO</p>
+  <small>Espacio reservado para la imagen definitiva</small>
+</div>
 <button id="wall-start-button" type="button" aria-label="JUGAR: comenzar la travesía" onclick="document.getElementById('wall-start-screen').hidden=true;window.scrollTo(0,0);">JUGAR</button>
 </div>
 </div>
@@ -811,7 +834,7 @@ if (new URLSearchParams(location.search).has('previsualizar')) {
     if (borrador && borrador.slides) Object.assign(WALL_STREET_DATA, borrador);
   } catch (e) { console.warn('Borrador no disponible', e); }
 }
-document.getElementById('wall-cover-image').src = WALL_STREET_DATA.cover;
+// La portada definitiva sigue pendiente: se conserva su referencia en contenido.js.
 const CREW_AVATARS = WALL_STREET_DATA.avatars;
 
 const IMAGES = WALL_STREET_DATA.images;
