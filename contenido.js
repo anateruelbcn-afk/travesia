@@ -429,7 +429,7 @@ window.WALL_STREET_DATA = {
         "13:00. Salimos de Puerto Calero a las 11:00. Estamos navegando con viento SW de 20 a 27 nudos rumbo 190º-200º, hacemos 9 a 9,5 nudos y por momentos pasamos los 10 nudos. LAT: 28º 37'N long: 013º 47'W.\n10:00. Hay que poner motor porque el viento ha bajado mucho, estamos al través de Punta Llantailla. Ponemos rumbo 240º velocidad 5-6 nudos.",
         "Día 03/01/97: 11:30. Puerto de Mogán. Entramos aquí a las 09:00 después de navegar a vela y/o motor, según las circunstancias."
       ],
-      "narrative": "¡INCIDENTE EN EL MUELLE DE MOGÁN (03/01/97)! En la travesía nocturna entre Fuerteventura y Gran Canaria, durante la guardia de Pato, dos peces voladores despistados aterrizaron en la cubierta del Wall Street. Y justo al amarrar en Puerto de Mogán, se presenta un inspector de Aduanas con cara de pocos amigos...",
+      "narrative": "El 3 de enero de 1997 el Wall Street llega a Puerto de Mogán, Gran Canaria, tras navegar a vela y motor desde Lanzarote. La tripulación prepara la siguiente etapa rumbo al Atlántico.",
       "images": [
         {
           "key": "Imagen_16.png",
@@ -440,25 +440,7 @@ window.WALL_STREET_DATA = {
           "caption": "Postal original: «MOGAN PUERTO - GRAN CANARIA»"
         }
       ],
-      "svg": "canaries_route",
-      "dilemma": {
-        "title": "DILEMA",
-        "prompt": "Un celoso agente de Aduanas sostiene un rollo de cinta oficial y amenaza con precintar el Wall Street hasta el lunes siguiente por una supuesta discrepancia burocrática en el tránsito de abanderamiento y pertrechos. Entretanto, del interior del barco sale un aroma irresistible: estáis preparando una paella con los dos peces voladores que cayeron en cubierta en la guardia de Pato. ¿Qué hacéis?",
-        "options": [
-          {
-            "label": "A. Discutir acaloradamente sobre derecho marítimo internacional y exigir hablar con el almirante de Canarias.",
-            "outcome_type": "recoverable",
-            "outcome_title": "⚠️ ¡El agente saca el sello rojo!",
-            "outcome_text": "Cuanto más citáis la Convención de Jamaica de 1982, más despacio abre su maletín el funcionario para sacar las actas de inmovilización. ¡En puerto canario y a la hora de cenar, la burocracia no se gana con leyes sino por el estómago! Intentad otra estrategia."
-          },
-          {
-            "label": "B. Invitar al inspector a subir a bordo y servirle un plato humeante de «Paella Atlántica de Peces Voladores» con una copa de buen vino.",
-            "outcome_type": "continue",
-            "outcome_title": "🥘 ¡Mano de santo! Sello de salida aprobado con honores",
-            "outcome_text": "El inspector duda tres segundos, huele el sofrito, guarda el precinto en el bolsillo y acepta el plato. Tras probar los dos peces voladores que habían saltado a cubierta durante la guardia de Pato, declara que jamás había probado una paella de alta mar tan exótica, estampa el sello de despacho sin más preguntas y os desea buenos alisios hacia el Caribe."
-          }
-        ]
-      }
+      "svg": "canaries_route"
     },
     {
       "id": 11,
@@ -644,6 +626,40 @@ window.WALL_STREET_DATA = {
             "text": "Exactamente los mismos 18 nudos, porque el viento aparente solo cambia cuando se modifica el ángulo de las velas.",
             "correct": false,
             "feedback": "Incorrecto. El viento aparente depende siempre de la velocidad del barco además del viento real; no es un valor fijo ni independiente del avance."
+          }
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "type": "quiz",
+      "date": "Día 16/01/97",
+      "location": "Mitad del Atlántico · Fiesta de choripanes",
+      "coords": "Meridiano 43°30' W",
+      "stage": "Etapa 5: El Gran Salto Atlántico",
+      "title": "🥩 El misterio de los choripanes arrebatados",
+      "logbook": [],
+      "narrative": "El Wall Street celebra la mitad del Atlántico con choripanes y vino. Pero surge una duda digna de parrillero argentino…",
+      "images": [],
+      "svg": null,
+      "quiz": {
+        "category": "Cultura gastronómica marinera",
+        "question": "En el asado argentino, ¿qué error grave cometió el parrillero si confiesa que los chorizos se le han «arrebatado»?",
+        "options": [
+          {
+            "text": "Usar leña verde, ahumándolos en exceso y dejando sabor a ceniza.",
+            "correct": false,
+            "feedback": "Incorrecto. Eso es simplemente hacer un mal fuego, no arrebatar."
+          },
+          {
+            "text": "Poner fuego muy fuerte.",
+            "correct": true,
+            "feedback": "¡Correcto! Arrebatar es chamuscar el exterior por exceso de brasa sin llegar a cocinar el centro."
+          },
+          {
+            "text": "Pincharlos demasiadas veces, perdiendo los jugos y secando la carne.",
+            "correct": false,
+            "feedback": "Incorrecto. Eso seca el chorizo, pero el término exacto no es «arrebatar»."
           }
         ]
       }
